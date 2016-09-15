@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.flightaware.android.flightfeeder"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 29
+        versionName "2.0.29"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:preference-v7:24.1.1'
+    compile 'com.android.support:preference-v14:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'me.zhanghai.android.materialprogressbar:library:1.1.4'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
+    compile 'com.google.android.gms:play-services-maps:9.4.0'
+}

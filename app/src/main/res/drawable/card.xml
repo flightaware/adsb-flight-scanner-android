@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/card_corner_radius" />
+
+            <solid android:color="#CCC" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/card_corner_radius">
+        <shape android:shape="rectangle" >
+            <corners android:radius="@dimen/card_corner_radius" />
+
+            <solid android:color="@android:color/white" />
+
+            <padding
+                android:bottom="@dimen/card_padding"
+                android:left="@dimen/card_padding"
+                android:right="@dimen/card_padding"
+                android:top="@dimen/card_padding" />
+        </shape>
+    </item>
+
+</layer-list>

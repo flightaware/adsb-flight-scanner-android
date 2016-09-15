@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="ADSB"
+        android:dialogTitle="@string/prefs_dialog_scan_mode_title"
+        android:entries="@array/prefs_scan_mode_items"
+        android:entryValues="@array/prefs_scan_mode_values"
+        android:key="pref_scan_mode"
+        android:summary="@string/prefs_scan_mode_summary"
+        android:title="@string/prefs_scan_mode_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:disableDependentsState="false"
+        android:key="pref_background"
+        android:summary="@string/prefs_background_summary"
+        android:title="@string/prefs_background_title" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_keep_screen_on"
+        android:summary="@string/prefs_keep_screen_on_summary"
+        android:title="@string/prefs_keep_screen_on_title" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_broadcast"
+        android:summary="@string/prefs_broadcast_summary"
+        android:title="@string/prefs_broadcast_title" />
+
+    <Preference
+        android:key="pref_location"
+        android:title="@string/prefs_antenna_location_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_avr"
+        android:summary="@string/prefs_avr_format_summary"
+        android:title="@string/prefs_avr_format_title" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_beast"
+        android:summary="@string/prefs_beast_format_summary"
+        android:title="@string/prefs_beast_format_title" />
+    <Preference
+        android:key="pref_licenses"
+        android:summary="@string/prefs_licenses_summary"
+        android:title="@string/prefs_licenses_title" />
+    <Preference
+        android:key="pref_version"
+        android:title="@string/prefs_version_title" />
+
+</PreferenceScreen>

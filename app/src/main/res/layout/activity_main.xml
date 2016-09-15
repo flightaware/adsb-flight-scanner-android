@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flightaware.android.flightfeeder.activities.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Rx"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:src="@drawable/data_off" />
+
+            <ImageView
+                android:id="@+id/tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:src="@drawable/data_off" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:text="Tx"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="@string/text_rate"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="@string/text_zero"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="@string/text_range"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="@string/text_zero"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            style="?attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/listPreferredItemHeightSmall"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/icao"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="ICAO"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ident"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Flight"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/squawk"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sqwk"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/latitude"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Lat"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Lon"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/altitude"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="Alt"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="GS"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Hdg"
+                android:textSize="@dimen/font_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+
+        <ListView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/menu_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

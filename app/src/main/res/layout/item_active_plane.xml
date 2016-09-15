@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:minHeight="?attr/listPreferredItemHeightSmall"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5" >
+
+        <TextView
+            android:id="@+id/icao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dip"
+            android:gravity="center"
+            android:textSize="@dimen/font_size" />
+
+        <ImageView
+            android:id="@+id/uat_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_uat_flag" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ident"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="@dimen/font_size" />
+
+    <TextView
+        android:id="@+id/squawk"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/font_size" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="@dimen/font_size" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="@dimen/font_size" />
+
+    <TextView
+        android:id="@+id/altitude"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:textSize="@dimen/font_size" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/font_size" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/font_size" />
+
+</LinearLayout>

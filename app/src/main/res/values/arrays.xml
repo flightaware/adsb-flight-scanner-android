@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="prefs_scan_mode_items">
+        <item>@string/prefs_text_1090</item>
+        <item>@string/prefs_text_978_mhz</item>
+        <item>@string/prefs_text_both</item>
+    </string-array>
+    <string-array name="prefs_scan_mode_values">
+        <item>ADSB</item>
+        <item>UAT</item>
+        <item>BOTH</item>
+    </string-array>
+
+</resources>
